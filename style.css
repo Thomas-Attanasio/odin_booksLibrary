@@ -20,22 +20,28 @@ body {
 
 
 
-/* Header */
+/* HEADER */
 .headerContainer {
     display: flex;
     justify-content: space-between;
 }
 
+
+/* header logo image */
 .headerLogo img {
     width: 200px;
 }
 
+
+/* display everything at the same size */
 .headerLogo,
 .headerTitle,
 .headerLinks {
     flex: 1;
 }
 
+
+/* header main title */
 .headerTitle {
     display: flex;
     justify-content: center;
@@ -44,6 +50,8 @@ body {
     gap: 20px;
 }
 
+
+/* header links */
 .headerLinks ul {
     display: flex;
     gap: 40px;
