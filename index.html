@@ -75,6 +75,8 @@
             <div class="newBookFormContainer" id="newBookFormContainer">
                 <form id="newBookForm">
                     <fieldset>
+                        <button id="hideFormButton"><i class="fas fa-times"></i></button>
+
                         <legend>Add a new book</legend>
 
                         <div class="inputGroup">
@@ -93,13 +95,17 @@
                         </div>
 
                         <div class="inputGroup radioInput">
-                            <p>Have you read it?</p>
+                            <label>Have you read it?</label>
 
-                            <input type="radio" id="isRead" name="bookRead" value="Yes">
-                            <label for="isRead">Yes</label>
+                            <div class="radioOption">
+                                <input type="radio" id="isRead" name="bookRead" value="Yes">
+                                <label for="isRead">Yes</label>
+                            </div>
 
-                            <input type="radio" id="isNotRead" name="bookRead" value="No">
-                            <label for="isNotRead">No</label>
+                            <div class="radioOption">
+                                <input type="radio" id="isNotRead" name="bookRead" value="No">
+                                <label for="isNotRead">No</label>
+                            </div>
                         </div>
 
                         <button type="submit" id="addBookButton">Add</button>

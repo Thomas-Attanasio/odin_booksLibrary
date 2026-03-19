@@ -119,8 +119,62 @@ body {
     z-index: 2000;
 }
 
+#newBookForm {
+    background-color: #1e1f21;
+    width: 90%;
+    max-width: 450px;
+    border: 3px solid #aeb5a9;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
 
+#newBookForm fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+#newBookForm legend {
+    color: #aeb5a9;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.inputGroup label {
+    color: #aeb5a9;
+    margin-bottom: 3px;
+}
+
+.inputGroup input {
+    border: 1px solid #aeb5a9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#hideFormButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #ff0000;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
 .booksContainer #showFormButton {
     position: fixed;
