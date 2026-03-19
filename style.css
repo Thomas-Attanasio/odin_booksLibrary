@@ -107,3 +107,32 @@ body {
 .howToUseCardGroup:hover p {
     display: block;
 }
+
+
+
+
+/* Books section */
+.booksContainer button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #1e1f21;
+    color: #aeb5a9;
+    font-size: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.booksContainer button:hover {
+    transform: scale(1.07);
+}
+
+.booksContainer button:active {
+    transform: scale(0.93);
+}
