@@ -9,19 +9,16 @@ body {
     background-color: #aeb5a9;
 }
 
-.mainContainer {
-    background-color: #1e1f21;
-    color: #ffffff;
-    border-radius: 50px;
-    margin: 10px;
-    padding: 13px;
-}
-
 
 
 
 /* HEADER */
 .headerContainer {
+    background-color: #1e1f21;
+    color: #ffffff;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 13px;
     display: flex;
     justify-content: space-between;
 }
@@ -70,4 +67,43 @@ body {
     color: #008080;
     font-size: 25px;
     text-decoration: underline #008080;
+}
+
+
+
+
+/* How To Use */
+.howToUseTitle h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.howToUseCards {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 20px;
+}
+
+.howToUseCardGroup {
+    width: 300px;
+    max-height: fit-content;
+    border: 3px solid #000000;
+    border-radius: 7px;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 5px 5px 7px;
+    transition: all 0.3s ease;
+}
+
+.howToUseCardGroup p {
+    display: none;
+}
+
+.howToUseCardGroup:hover {
+    transform: scale(1.03);
+}
+
+.howToUseCardGroup:hover p {
+    display: block;
 }
