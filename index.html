@@ -18,17 +18,15 @@
     <div class="mainContainer">
         <!-- Header -->
         <div class="headerContainer">
-            <!-- Header image -->
+            
             <div class="headerLogo">
                 <a href="#"><img src="images/booksLibraryLogo.png"></a>
             </div>
 
-            <!-- Header main title -->
             <div class="headerTitle">
                 <h1>WELCOME TO YOUR <br> BOOKS NEST</h1>
             </div>
 
-            <!-- Header links -->
             <div class="headerLinks">
                 <ul>
                     <li>
@@ -47,44 +45,69 @@
         
         <!-- How to use section -->
         <div class="howToUseContainer" id="howToUseSection">
-            <!-- Title -->
             <div class="howToUseTitle">
                 <h1>How to use?</h1>
             </div>
 
-            <!-- Info cards -->
             <div class="howToUseCards">
                 <div class="howToUseCardGroup">
                     <h2>ADD A NEW BOOK</h2>
 
-                    <p>
-                        Just press the '+' button
-                    </p>
+                    <p>Just press the '+' button</p>
                 </div>
 
                 <div class="howToUseCardGroup">
                     <h2>WRITE</h2>
 
-                    <p>
-                        Enter all the info
-                    </p>
+                    <p>Enter all the info</p>
                 </div>
 
                 <div class="howToUseCardGroup">
                     <h2>SEE THE MAGIC</h2>
 
-                    <p>
-                        Watch your book appear
-                    </p>
+                    <p>Watch your book appear</p>
                 </div>
             </div>
         </div>
 
         <!-- Personal books -->
         <div class="booksContainer">
-            
+            <div class="newBookFormContainer" id="newBookFormContainer">
+                <form id="newBookForm">
+                    <fieldset>
+                        <legend>Add a new book</legend>
 
-            <button id="addBookButton"><i class="fas fa-plus"></i></button>
+                        <div class="inputGroup">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" placeholder="Enter the title" required>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="author">Author</label>
+                            <input type="text" id="author" placeholder="Enter the author" required>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="pagesNumber">Pages</label>
+                            <input type="number" id="pagesNumber" placeholder="0" min="0" required>
+                        </div>
+
+                        <div class="inputGroup radioInput">
+                            <p>Have you read it?</p>
+
+                            <input type="radio" id="isRead" name="bookRead" value="Yes">
+                            <label for="isRead">Yes</label>
+
+                            <input type="radio" id="isNotRead" name="bookRead" value="No">
+                            <label for="isNotRead">No</label>
+                        </div>
+
+                        <button type="submit" id="addBookButton">Add</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <button id="showFormButton"><i class="fas fa-plus"></i></button>
         </div>
     </div>
 

@@ -23,8 +23,6 @@ body {
     justify-content: space-between;
 }
 
-
-/* header logo image */
 .headerLogo img {
     width: 200px;
 }
@@ -37,8 +35,6 @@ body {
     flex: 1;
 }
 
-
-/* header main title */
 .headerTitle {
     display: flex;
     justify-content: center;
@@ -47,8 +43,6 @@ body {
     gap: 20px;
 }
 
-
-/* header links */
 .headerLinks ul {
     display: flex;
     gap: 40px;
@@ -112,7 +106,23 @@ body {
 
 
 /* Books section */
-.booksContainer button {
+.newBookFormContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+
+
+
+.booksContainer #showFormButton {
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -129,10 +139,10 @@ body {
     transition: all 0.3s ease;
 }
 
-.booksContainer button:hover {
+.booksContainer #showFormButton:hover {
     transform: scale(1.07);
 }
 
-.booksContainer button:active {
+.booksContainer #showFormButton:active {
     transform: scale(0.93);
 }
