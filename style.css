@@ -90,16 +90,8 @@ body {
     transition: all 0.3s ease;
 }
 
-.howToUseCardGroup p {
-    display: none;
-}
-
 .howToUseCardGroup:hover {
     transform: scale(1.03);
-}
-
-.howToUseCardGroup:hover p {
-    display: block;
 }
 
 
@@ -200,4 +192,29 @@ body {
 
 .booksContainer #showFormButton:active {
     transform: scale(0.93);
+}
+
+
+
+
+/* New book added */
+.newBooksTitle {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.newBooks {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px;
+}
+
+.newBookContainer {
+    background-color: #1e1f21;
+    color: #aeb5a9;
+    width: 300px;
+    height: 400px;
+    padding: 13px;
+
 }
