@@ -230,3 +230,23 @@ body {
 .newBookContainer:hover {
     transform: scale(1.03);
 }
+
+
+/* Change read status button */
+.changeReadStatus {
+    border: none;
+    border-radius: 8px;
+    background-color: #1e1f21;
+    color: #aeb5a9;
+    margin-top: 80px;
+    padding: 7px;
+    transition: all 0.3s ease;
+}
+
+.changeReadStatus:hover {
+    transform: scale(1.03);
+}
+
+.changeReadStatus:active {
+    transform: scale(0.97);
+}

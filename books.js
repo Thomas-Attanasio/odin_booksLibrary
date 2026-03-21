@@ -16,4 +16,6 @@ function Books(title, author, pagesNumber, readStatus) {
 export function addBook(title, author, pagesNumber, readStatus) {
     const newBook = new Books(title, author, pagesNumber, readStatus);
     myBooks.push(newBook);
+
+    return newBook;
 }

@@ -30,7 +30,7 @@ newBookForm.addEventListener('submit', (e) => {
         isRead = false;
     }
 
-    addBook(title, author, pagesNumber, isRead);
+    const currentBook = addBook(title, author, pagesNumber, isRead);
 
     const newBook = document.createElement('div');
     newBook.classList.add('newBookContainer');
@@ -39,10 +39,23 @@ newBookForm.addEventListener('submit', (e) => {
         <div style="margin-bottom: 10px;"><b>Title:</b> ${title}</div>
         <div style="margin-bottom: 10px;"><b>Author:</b> ${author}</div>
         <div style="margin-bottom: 10px;"><b>Pages:</b> ${pagesNumber}</div>
-        <div><b>Read:</b> ${isRead ? 'Yes' : 'No'}
+        <div><b>Read:</b> <span class="readText">${isRead ? 'Yes' : 'No'}</span></div>
     `;
 
+    const changeStatusButton = document.createElement('button');
+    changeStatusButton.classList.add('changeReadStatus');
+    changeStatusButton.innerHTML = 'Change Read Status';
+
+    changeStatusButton.addEventListener('click', () => {
+        const readStatusText = newBook.querySelector('.readText');
+
+        currentBook.readStatus = !currentBook.readStatus;
+        readStatusText.textContent = currentBook.readStatus ? 'Yes' : 'No';
+    });
+
     newBooksContainer.appendChild(newBook);
+    newBook.appendChild(changeStatusButton);
+
     booksContainer.style.display = 'none';
     newBookForm.reset();
 });
