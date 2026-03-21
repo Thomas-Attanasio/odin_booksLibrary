@@ -12,6 +12,7 @@ showFormButton.addEventListener('click', () => {
 
 hideFormButton.addEventListener('click', () => {
     booksContainer.style.display = 'none';
+    newBookForm.reset();
 });
 
 newBookForm.addEventListener('submit', (e) => {
