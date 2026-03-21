@@ -35,12 +35,13 @@ newBookForm.addEventListener('submit', (e) => {
     newBook.classList.add('newBookContainer');
 
     newBook.innerHTML = `
-        Title: ${title} <br>
-        Author: ${author} <br>
-        Pages: ${pagesNumber} <br>
-        Have you read it?: ${isRead ? 'Yes' : 'No'}
+        <div style="margin-bottom: 10px;"><b>Title:</b> ${title}</div>
+        <div style="margin-bottom: 10px;"><b>Author:</b> ${author}</div>
+        <div style="margin-bottom: 10px;"><b>Pages:</b> ${pagesNumber}</div>
+        <div><b>Read:</b> ${isRead ? 'Yes' : 'No'}
     `;
 
     newBooksContainer.appendChild(newBook);
     booksContainer.style.display = 'none';
+    newBookForm.reset();
 });
