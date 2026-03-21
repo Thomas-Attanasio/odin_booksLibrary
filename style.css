@@ -225,6 +225,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .newBookContainer:hover {
@@ -234,12 +235,15 @@ body {
 
 /* Change read status button */
 .changeReadStatus {
-    border: none;
-    border-radius: 8px;
+    position: absolute;
+    left: 25px;
+    bottom: 40px;
     background-color: #1e1f21;
     color: #aeb5a9;
-    margin-top: 80px;
+    border: none;
+    border-radius: 8px;
     padding: 7px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
